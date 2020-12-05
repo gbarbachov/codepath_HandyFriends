@@ -19,6 +19,7 @@ class PostTaskViewController: UIViewController, UIImagePickerControllerDelegate,
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //GB comment
     }
     
     @IBAction func onCreateButton(_ sender: Any) {
