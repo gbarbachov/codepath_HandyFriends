@@ -130,7 +130,7 @@
         <!--I need help with-->
         <scene sceneID="EOD-K7-Qau">
             <objects>
-                <viewController storyboardIdentifier="DiscoverGridViewController" id="dex-6k-hm9" customClass="DiscoverGridViewController" customModule="HandyBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiscoverViewController" id="dex-6k-hm9" customClass="DiscoverViewController" customModule="HandyBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z5P-dS-FeF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1246"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,17 +139,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DMA-Mp-fZz">
-                                        <rect key="frame" x="214" y="600" width="180" height="280"/>
+                                        <rect key="frame" x="214" y="600" width="180" height="260"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="painting - 2" translatesAutoresizingMaskIntoConstraints="NO" id="Jmg-pt-vm4">
-                                                <rect key="frame" x="0.0" y="0.0" width="180" height="240"/>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="painting - 2" translatesAutoresizingMaskIntoConstraints="NO" id="Jmg-pt-vm4">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="220"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="13D-qq-cRI"/>
                                                     <constraint firstAttribute="width" constant="180" id="vBT-sC-VhC"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="z9j-ox-H9U" appends="YES" id="hVW-8B-5zI"/>
+                                                </connections>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Painting work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJu-SL-oh4">
-                                                <rect key="frame" x="0.0" y="240" width="180" height="40"/>
+                                                <rect key="frame" x="0.0" y="220" width="180" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="180" id="Rof-sK-st4"/>
@@ -161,7 +165,7 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="280" id="K5D-Vn-PZC"/>
+                                            <constraint firstAttribute="height" constant="260" id="K5D-Vn-PZC"/>
                                             <constraint firstAttribute="width" constant="180" id="bTD-ag-76j"/>
                                             <constraint firstItem="Jmg-pt-vm4" firstAttribute="top" secondItem="DMA-Mp-fZz" secondAttribute="top" id="buF-zm-FF9"/>
                                         </constraints>
@@ -169,14 +173,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EqR-RT-A0O">
                                         <rect key="frame" x="214" y="320" width="180" height="260"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moving help" translatesAutoresizingMaskIntoConstraints="NO" id="loP-7v-SQd">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moving help" translatesAutoresizingMaskIntoConstraints="NO" id="loP-7v-SQd">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="220"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="220" id="KWB-x7-QbN"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="LTJ-oT-dm7"/>
                                                     <constraint firstAttribute="width" constant="180" id="p1Q-bo-swl"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="qQh-ii-ulX"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="FTu-be-RYh" appends="YES" id="kte-Ng-Z1a"/>
+                                                </connections>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moving work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lm-Aw-3Oo">
                                                 <rect key="frame" x="0.0" y="220" width="180" height="40"/>
@@ -199,12 +207,16 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Vx0-7Q-59w">
                                         <rect key="frame" x="20" y="320" width="180" height="276"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home repair" translatesAutoresizingMaskIntoConstraints="NO" id="HHW-Zq-QNT">
+                                            <imageView clipsSubviews="YES" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home repair" translatesAutoresizingMaskIntoConstraints="NO" id="HHW-Zq-QNT">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="158"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="158" id="RB3-gR-rug"/>
                                                     <constraint firstAttribute="width" constant="180" id="k7X-ZU-ftt"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Nh3-Xh-nea" appends="YES" id="1iX-wH-ggE"/>
+                                                </connections>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Repair" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNR-Vh-Kuf">
                                                 <rect key="frame" x="0.0" y="174" width="180" height="102"/>
@@ -222,25 +234,33 @@
                                             <constraint firstItem="CNR-Vh-Kuf" firstAttribute="top" secondItem="HHW-Zq-QNT" secondAttribute="bottom" constant="-2" id="8DD-Hj-qBN"/>
                                         </constraints>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plumbing" translatesAutoresizingMaskIntoConstraints="NO" id="aIy-FO-Crn">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plumbing" translatesAutoresizingMaskIntoConstraints="NO" id="aIy-FO-Crn">
                                         <rect key="frame" x="20" y="40" width="180" height="260"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="260" id="rmN-Im-fyW"/>
                                             <constraint firstAttribute="width" constant="180" id="tiI-jK-JrB"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="lWc-BO-gLx" appends="YES" id="EHQ-K4-pGG"/>
+                                        </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="diA-zv-y71">
-                                        <rect key="frame" x="20" y="616" width="180" height="280"/>
+                                        <rect key="frame" x="20" y="616" width="180" height="260"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yard work" translatesAutoresizingMaskIntoConstraints="NO" id="dod-Gm-sSl">
-                                                <rect key="frame" x="0.0" y="0.0" width="180" height="162"/>
+                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yard work" translatesAutoresizingMaskIntoConstraints="NO" id="dod-Gm-sSl">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="142"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="158" id="NaZ-sH-hNI"/>
                                                     <constraint firstAttribute="width" constant="180" id="Rib-NO-d1H"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="naC-fq-Lg7" appends="YES" id="R8W-RV-LFw"/>
+                                                </connections>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yard work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1d-sg-6WO">
-                                                <rect key="frame" x="0.0" y="178" width="180" height="102"/>
+                                                <rect key="frame" x="0.0" y="158" width="180" height="102"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="102" id="20t-dL-UiT"/>
@@ -252,20 +272,24 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="280" id="2wO-ge-9MO"/>
-                                            <constraint firstItem="h1d-sg-6WO" firstAttribute="top" secondItem="dod-Gm-sSl" secondAttribute="bottom" constant="-2" id="6zc-1n-vIw"/>
+                                            <constraint firstAttribute="height" constant="260" id="2wO-ge-9MO"/>
+                                            <constraint firstItem="h1d-sg-6WO" firstAttribute="top" secondItem="dod-Gm-sSl" secondAttribute="bottom" id="6zc-1n-vIw"/>
                                             <constraint firstAttribute="width" constant="180" id="OsL-8j-dja"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IoW-z5-bhG">
                                         <rect key="frame" x="214" y="40" width="180" height="260"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="electrical work" translatesAutoresizingMaskIntoConstraints="NO" id="tS9-1Y-D1x">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="electrical work" translatesAutoresizingMaskIntoConstraints="NO" id="tS9-1Y-D1x">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="220"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="180" id="SoS-ZX-LFM"/>
                                                     <constraint firstAttribute="height" constant="200" id="aFE-wu-3PO"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="6hL-M0-GGU" appends="YES" id="A39-wU-kxE"/>
+                                                </connections>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elecrical work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0g-ra-VKX">
                                                 <rect key="frame" x="0.0" y="220" width="180" height="40"/>
@@ -329,8 +353,46 @@
                     </view>
                     <navigationItem key="navigationItem" title="I need help with" id="sY0-dg-MKt"/>
                     <size key="freeformSize" width="414" height="1300"/>
+                    <connections>
+                        <outlet property="onElectical" destination="6hL-M0-GGU" id="WSE-Is-qrf"/>
+                        <outlet property="onHomeRepair" destination="Nh3-Xh-nea" id="9nI-5W-TQP"/>
+                        <outlet property="onMoving" destination="FTu-be-RYh" id="Qgh-l8-dnS"/>
+                        <outlet property="onPainting" destination="z9j-ox-H9U" id="0c9-PC-LIT"/>
+                        <outlet property="onPlumbing" destination="lWc-BO-gLx" id="8sT-vj-Qy6"/>
+                        <outlet property="onYardWork" destination="naC-fq-Lg7" id="iHm-0l-0JQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TsT-WA-Bst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lWc-BO-gLx">
+                    <connections>
+                        <segue destination="JeP-gv-2uJ" kind="presentation" id="pRM-CV-504"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6hL-M0-GGU">
+                    <connections>
+                        <segue destination="JeP-gv-2uJ" kind="presentation" id="mBI-j1-g38"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Nh3-Xh-nea">
+                    <connections>
+                        <segue destination="JeP-gv-2uJ" kind="presentation" id="1uM-RB-Sty"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="FTu-be-RYh">
+                    <connections>
+                        <segue destination="JeP-gv-2uJ" kind="presentation" id="EHS-xf-HGY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="naC-fq-Lg7">
+                    <connections>
+                        <segue destination="JeP-gv-2uJ" kind="presentation" id="Pzg-yC-fTu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="z9j-ox-H9U">
+                    <connections>
+                        <segue destination="JeP-gv-2uJ" kind="presentation" id="Wkd-Xb-4fF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1105.7971014492755" y="2387.9464285714284"/>
         </scene>
@@ -499,7 +561,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-839" y="3120"/>
+            <point key="canvasLocation" x="-455" y="3399"/>
         </scene>
         <!--Task Details View Controller-->
         <scene sceneID="TrT-jO-uxu">
@@ -544,8 +606,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="Y9p-lw-Y8L" kind="relationship" relationship="viewControllers" id="nEb-gv-xHv"/>
-                        <segue destination="csR-Sg-TRW" kind="relationship" relationship="viewControllers" id="PLy-2x-wKs"/>
                         <segue destination="Z58-Hb-sNG" kind="relationship" relationship="viewControllers" id="l3c-h9-nen"/>
+                        <segue destination="csR-Sg-TRW" kind="relationship" relationship="viewControllers" id="PLy-2x-wKs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IdJ-bR-lY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -610,6 +672,9 @@
             <point key="canvasLocation" x="1106" y="1582"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pRM-CV-504"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="HandyFriends Logo-1" width="180" height="180"/>
         <image name="electrical work" width="371" height="242"/>

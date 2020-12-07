@@ -23,7 +23,7 @@
 		C760C3C1257C2AC60032D896 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C760C3C0257C2AC60032D896 /* ProfileViewController.swift */; };
 		C760C3C6257C2FA30032D896 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C760C3C5257C2FA30032D896 /* TaskCell.swift */; };
 		C760C3D1257C41880032D896 /* TaskDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C760C3D0257C41880032D896 /* TaskDetailsViewController.swift */; };
-		C77FEAFF257E1A83008A5580 /* DiscoverGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FEAFE257E1A83008A5580 /* DiscoverGridViewController.swift */; };
+		C77FEB15257E4106008A5580 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FEB14257E4106008A5580 /* DiscoverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,7 @@
 		C760C3C0257C2AC60032D896 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C760C3C5257C2FA30032D896 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		C760C3D0257C41880032D896 /* TaskDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewController.swift; sourceTree = "<group>"; };
-		C77FEAFE257E1A83008A5580 /* DiscoverGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverGridViewController.swift; sourceTree = "<group>"; };
+		C77FEB14257E4106008A5580 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		D56D4F757523733C0EDA8047 /* Pods_HandyBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandyBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,7 +154,7 @@
 				C760C36C257C09EE0032D896 /* AppDelegate.swift */,
 				C760C36E257C09EE0032D896 /* SceneDelegate.swift */,
 				C760C370257C09EE0032D896 /* LoginViewController.swift */,
-				C77FEAFE257E1A83008A5580 /* DiscoverGridViewController.swift */,
+				C77FEB14257E4106008A5580 /* DiscoverViewController.swift */,
 				C760C3B8257C1BAF0032D896 /* FeedViewController.swift */,
 				C760C3C5257C2FA30032D896 /* TaskCell.swift */,
 				C760C3B0257C14A20032D896 /* PostTaskViewController.swift */,
@@ -424,10 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77FEB15257E4106008A5580 /* DiscoverViewController.swift in Sources */,
 				C760C3C1257C2AC60032D896 /* ProfileViewController.swift in Sources */,
 				C760C3C6257C2FA30032D896 /* TaskCell.swift in Sources */,
 				C760C3D1257C41880032D896 /* TaskDetailsViewController.swift in Sources */,
-				C77FEAFF257E1A83008A5580 /* DiscoverGridViewController.swift in Sources */,
 				C760C371257C09EE0032D896 /* LoginViewController.swift in Sources */,
 				C760C36D257C09EE0032D896 /* AppDelegate.swift in Sources */,
 				C760C3B9257C1BAF0032D896 /* FeedViewController.swift in Sources */,
