@@ -1,13 +1,13 @@
 //
-//  DiscoverViewController.swift
+//  DiscoverGridViewController.swift
 //  HandyBuddy
 //
-//  Created by Grigori on 12/6/20.
+//  Created by Grigori on 12/7/20.
 //
 
 import UIKit
 
-class DiscoverViewController: UIViewController {
+class DiscoverGridViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
