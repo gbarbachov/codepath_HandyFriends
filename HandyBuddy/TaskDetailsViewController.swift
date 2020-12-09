@@ -8,6 +8,18 @@
 import UIKit
 
 class TaskDetailsViewController: UIViewController {
+    
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var taskLabel: UILabel!
+    
+    @IBOutlet weak var contractorLabel: UILabel!
+    @IBOutlet weak var taskDescription: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var moneyLabel: UILabel!
+    @IBAction func onEdit(_ sender: Any) {
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
