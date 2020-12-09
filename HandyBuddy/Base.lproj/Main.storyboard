@@ -3,10 +3,16 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,16 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HandyFriends Logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="0bj-P8-GSx">
-                                <rect key="frame" x="100" y="114" width="214" height="180"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMW-so-0WW">
-                                <rect key="frame" x="20" y="318" width="81" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username    " textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="QMW-so-0WW">
+                                <rect key="frame" x="20" y="318" width="354" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="XXy-L6-aMz"/>
                                     <constraint firstAttribute="width" constant="81" id="bo8-AH-fTd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -38,13 +41,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2E-cK-Peg">
-                                <rect key="frame" x="20" y="399" width="81" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password            " textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2E-cK-Peg">
+                                <rect key="frame" x="20" y="399" width="198" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="2wA-A5-6Pn"/>
                                     <constraint firstAttribute="width" constant="81" id="aPl-kw-KhD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -54,7 +57,10 @@
                                     <constraint firstAttribute="height" constant="33" id="gLD-DC-NtU"/>
                                     <constraint firstAttribute="width" constant="98" id="rJd-i7-jAN"/>
                                 </constraints>
-                                <state key="normal" title="Sign In"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" name="lightGreen"/>
+                                </state>
                                 <connections>
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mFU-sO-26n"/>
                                 </connections>
@@ -65,7 +71,10 @@
                                     <constraint firstAttribute="width" constant="98" id="gbi-j0-a7s"/>
                                     <constraint firstAttribute="height" constant="34" id="hed-D9-AjX"/>
                                 </constraints>
-                                <state key="normal" title="Sign Up"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" name="lightGreen"/>
+                                </state>
                                 <connections>
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="peX-XT-GLw"/>
                                 </connections>
@@ -79,6 +88,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="XHx-Px-mgj">
+                                <rect key="frame" x="65" y="44" width="284" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -89,16 +102,13 @@
                             <constraint firstItem="3JX-sq-hsV" firstAttribute="top" secondItem="PX7-di-z7J" secondAttribute="bottom" constant="61" id="3bP-kv-fp2"/>
                             <constraint firstItem="QMW-so-0WW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CYT-EG-sEI"/>
                             <constraint firstItem="PX7-di-z7J" firstAttribute="top" secondItem="t2E-cK-Peg" secondAttribute="bottom" constant="10" id="Ure-7B-fHb"/>
-                            <constraint firstItem="0bj-P8-GSx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wcs-qt-EzF"/>
                             <constraint firstItem="SA2-ds-2Cy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dwG-Gd-OWc"/>
-                            <constraint firstItem="0bj-P8-GSx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="hAP-cG-Zwh"/>
                             <constraint firstItem="t2E-cK-Peg" firstAttribute="top" secondItem="SA2-ds-2Cy" secondAttribute="bottom" constant="16" id="qFL-Me-jmx"/>
                             <constraint firstItem="QMW-so-0WW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="274" id="rXB-Ia-PyL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sco-sL-YNz" secondAttribute="trailing" constant="40" id="rec-UV-T59"/>
                             <constraint firstItem="t2E-cK-Peg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ryx-TP-RhQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SA2-ds-2Cy" secondAttribute="trailing" constant="20" id="wC9-hW-sXV"/>
                             <constraint firstItem="3JX-sq-hsV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yc2-vJ-Gb3"/>
-                            <constraint firstItem="0bj-P8-GSx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="z36-Tg-BmK"/>
                         </constraints>
                     </view>
                     <connections>
@@ -472,11 +482,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="a0b-u5-ubi">
                         <barButtonItem key="leftBarButtonItem" title="Logout" style="plain" id="L9Q-mm-hWr">
+                            <color key="tintColor" name="lightGreen"/>
                             <connections>
                                 <action selector="onLogoutButton:" destination="atq-qA-730" id="dwc-l0-QJn"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus.circle" catalog="system" style="plain" id="ei0-Sa-fxu">
+                            <color key="tintColor" name="lightGreen"/>
                             <connections>
                                 <segue destination="JeP-gv-2uJ" kind="presentation" id="FAI-3a-hHp"/>
                             </connections>
@@ -593,7 +605,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPA-0o-Sg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="3120"/>
+            <point key="canvasLocation" x="774" y="3398"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9Gl-BE-VZA">
@@ -673,10 +685,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pRM-CV-504"/>
+        <segue reference="FAI-3a-hHp"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="HandyFriends Logo-1" width="180" height="180"/>
+        <image name="Image" width="1024" height="1024"/>
         <image name="electrical work" width="371" height="242"/>
         <image name="home repair" width="323" height="156"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
@@ -688,6 +700,9 @@
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="plus.square" catalog="system" width="128" height="114"/>
         <image name="yard work" width="290" height="174"/>
+        <namedColor name="lightGreen">
+            <color red="0.60392156862745094" green="0.78431372549019607" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

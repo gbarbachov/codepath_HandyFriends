@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,28 +14,16 @@
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HandyFriends Logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nl4-aK-2zB">
-                                <rect key="frame" x="61" y="344" width="292" height="218"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="349.5" id="IMF-dJ-uy1"/>
-                                    <constraint firstAttribute="width" constant="414" id="xne-Nu-0ZV"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="fullLogo" translatesAutoresizingMaskIntoConstraints="NO" id="qlY-4G-Fpv">
+                                <rect key="frame" x="10" y="110" width="394" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Nl4-aK-2zB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="233" id="0Fp-N6-iG8"/>
-                            <constraint firstItem="Nl4-aK-2zB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0xy-fT-z8V"/>
-                            <constraint firstItem="Nl4-aK-2zB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AQB-Ld-w7e"/>
-                            <constraint firstItem="Nl4-aK-2zB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="L90-eh-rhR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nl4-aK-2zB" secondAttribute="bottom" constant="300" id="QZS-re-BwU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nl4-aK-2zB" secondAttribute="trailing" constant="61" id="aE1-qP-fG9"/>
-                            <constraint firstItem="Nl4-aK-2zB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-69.25" id="eFl-Qh-dFk"/>
-                            <constraint firstItem="Nl4-aK-2zB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="sWg-Z9-K51"/>
-                            <constraint firstItem="Nl4-aK-2zB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="10" id="sXG-Vo-udT"/>
-                        </constraints>
+                        <color key="backgroundColor" name="lightGreen"/>
+                        <color key="tintColor" name="lightGreen"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -44,9 +32,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HandyFriends Logo-1" width="180" height="180"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="fullLogo" width="1024" height="1024"/>
+        <namedColor name="lightGreen">
+            <color red="0.60392156862745094" green="0.78431372549019607" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
