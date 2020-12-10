@@ -12,13 +12,14 @@ class TaskDetailsViewController: UIViewController {
     
     var task: PFObject!
     
+    @IBOutlet weak var contractorDescription: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
-    
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var taskLabel: UILabel!
     
     @IBOutlet weak var contractorLabel: UILabel!
     @IBOutlet weak var taskDescription: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var taskLabel: UILabel!
+    
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var moneyLabel: UILabel!
     
