@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
 class TaskDetailsViewController: UIViewController {
     
@@ -14,7 +15,9 @@ class TaskDetailsViewController: UIViewController {
     
     @IBOutlet weak var contractorDescription: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var taskImage: UIImageView!
     
+    @IBOutlet weak var contractorImage: UIImageView!
     @IBOutlet weak var contractorLabel: UILabel!
     @IBOutlet weak var taskDescription: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -36,10 +39,29 @@ class TaskDetailsViewController: UIViewController {
         scrollView.contentSize = CGSize(width: contentWidth, height: contentHeight)
         
         taskLabel.text = task["title"] as! String
+        // if figure out autolayout, take this away
+        taskLabel.sizeToFit()
         taskDescription.text = task["description"] as? String
+        // if figure out autolayout, take this away
+        taskDescription.sizeToFit()
+        
+        dateLabel.sizeToFit()
+        moneyLabel.sizeToFit()
+        locationLabel.sizeToFit()
+        
+        if let imageFile = task["image"] as? PFFileObject{
+            let urlString = (imageFile.url)!
+        let url = URL(string: urlString)!
+        taskImage.af.setImage(withURL: url)
+        //To make round corners of the image
+        taskImage.layer.cornerRadius = 10
+        taskImage.clipsToBounds = true
         
         // add text to add pictures
-        
+        // add contractor info
+        // add sum of money
+                // adapt formating so that shows dollar sign
+        // add date 
         // Do any additional setup after loading the view.
     }
     
@@ -54,4 +76,5 @@ class TaskDetailsViewController: UIViewController {
     }
     */
 
+}
 }
