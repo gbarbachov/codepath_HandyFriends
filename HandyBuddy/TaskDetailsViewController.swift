@@ -53,8 +53,10 @@ class TaskDetailsViewController: UIViewController {
             let urlString = (imageFile.url)!
         let url = URL(string: urlString)!
         taskImage.af.setImage(withURL: url)
+        taskImage.layer.masksToBounds = true
+        taskImage.layer.cornerRadius = taskImage.bounds.width / 2
         //To make round corners of the image
-        taskImage.layer.cornerRadius = 10
+        //taskImage.layer.cornerRadius = 10
         taskImage.clipsToBounds = true
         
         // add text to add pictures
