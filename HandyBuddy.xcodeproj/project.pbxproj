@@ -24,6 +24,8 @@
 		C760C3C6257C2FA30032D896 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C760C3C5257C2FA30032D896 /* TaskCell.swift */; };
 		C760C3D1257C41880032D896 /* TaskDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C760C3D0257C41880032D896 /* TaskDetailsViewController.swift */; };
 		C77FEB15257E4106008A5580 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FEB14257E4106008A5580 /* DiscoverViewController.swift */; };
+		C7F4A3692582EDE2006655CD /* DiscoverNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F4A3682582EDE2006655CD /* DiscoverNewViewController.swift */; };
+		C7F4A36E2582EFF8006655CD /* ChooseContractorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F4A36D2582EFF8006655CD /* ChooseContractorViewController.swift */; };
 		F3B313072580656200D53C7B /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3B313062580655F00D53C7B /* Montserrat-Black.ttf */; };
 		F3B3130C2580656D00D53C7B /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3B3130B2580656D00D53C7B /* Montserrat-Regular.ttf */; };
 		F3B313112580657B00D53C7B /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3B313102580657B00D53C7B /* Montserrat-Thin.ttf */; };
@@ -79,6 +81,8 @@
 		C760C3C5257C2FA30032D896 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		C760C3D0257C41880032D896 /* TaskDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewController.swift; sourceTree = "<group>"; };
 		C77FEB14257E4106008A5580 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		C7F4A3682582EDE2006655CD /* DiscoverNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverNewViewController.swift; sourceTree = "<group>"; };
+		C7F4A36D2582EFF8006655CD /* ChooseContractorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseContractorViewController.swift; sourceTree = "<group>"; };
 		D56D4F757523733C0EDA8047 /* Pods_HandyBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandyBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B313062580655F00D53C7B /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		F3B3130B2580656D00D53C7B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
@@ -180,11 +184,13 @@
 				C760C3C5257C2FA30032D896 /* TaskCell.swift */,
 				C760C3B0257C14A20032D896 /* PostTaskViewController.swift */,
 				C760C372257C09EE0032D896 /* Main.storyboard */,
+				C7F4A3682582EDE2006655CD /* DiscoverNewViewController.swift */,
 				C760C375257C09F20032D896 /* Assets.xcassets */,
 				C760C377257C09F20032D896 /* LaunchScreen.storyboard */,
 				C760C37A257C09F20032D896 /* Info.plist */,
 				C760C3C0257C2AC60032D896 /* ProfileViewController.swift */,
 				C760C3D0257C41880032D896 /* TaskDetailsViewController.swift */,
+				C7F4A36D2582EFF8006655CD /* ChooseContractorViewController.swift */,
 			);
 			path = HandyBuddy;
 			sourceTree = "<group>";
@@ -452,9 +458,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F4A3692582EDE2006655CD /* DiscoverNewViewController.swift in Sources */,
 				C77FEB15257E4106008A5580 /* DiscoverViewController.swift in Sources */,
 				C760C3C1257C2AC60032D896 /* ProfileViewController.swift in Sources */,
 				C760C3C6257C2FA30032D896 /* TaskCell.swift in Sources */,
+				C7F4A36E2582EFF8006655CD /* ChooseContractorViewController.swift in Sources */,
 				C760C3D1257C41880032D896 /* TaskDetailsViewController.swift in Sources */,
 				C760C371257C09EE0032D896 /* LoginViewController.swift in Sources */,
 				C760C36D257C09EE0032D896 /* AppDelegate.swift in Sources */,
