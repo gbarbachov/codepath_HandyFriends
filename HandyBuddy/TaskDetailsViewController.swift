@@ -58,7 +58,7 @@ class TaskDetailsViewController: UIViewController {
         //To make round corners of the image
         //taskImage.layer.cornerRadius = 10
         taskImage.clipsToBounds = true
-        
+            
         // add text to add pictures
         // add contractor info
         // add sum of money
