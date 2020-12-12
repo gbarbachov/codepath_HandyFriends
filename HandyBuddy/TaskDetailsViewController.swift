@@ -42,9 +42,16 @@ class TaskDetailsViewController: UIViewController {
         // if figure out autolayout, take this away
         taskLabel.sizeToFit()
         taskDescription.text = task["description"] as? String
+        contractorLabel.text = task["contractor"] as? String
+        // not sure about the naming here
+        //contractorDescription.text = task["contractorInfo"] as? String
+        locationLabel.text = task["location"] as? String
+        moneyLabel.text = task["money"] as? String
         // if figure out autolayout, take this away
         taskDescription.sizeToFit()
-        
+        locationLabel.sizeToFit()
+        contractorLabel.sizeToFit()
+        contractorDescription.sizeToFit()
         dateLabel.sizeToFit()
         moneyLabel.sizeToFit()
         locationLabel.sizeToFit()
@@ -58,15 +65,29 @@ class TaskDetailsViewController: UIViewController {
         //To make round corners of the image
         //taskImage.layer.cornerRadius = 10
         taskImage.clipsToBounds = true
+            //depends on the naming of the image & how the image is stored
+       /*
+        if let imageFile = task["image"] as? PFFileObject{
+            let urlString = (imageFile.url)!
+        let url = URL(string: urlString)!
+        taskImage.af.setImage(withURL: url)
+        taskImage.layer.masksToBounds = true
+        taskImage.layer.cornerRadius = taskImage.bounds.width / 2
+            //To make round corners of the image
+            //taskImage.layer.cornerRadius = 10
+            taskImage.clipsToBounds = true
+        
             
         // add text to add pictures
         // add contractor info
         // add sum of money
-                // adapt formating so that shows dollar sign
+        // adapt formating so that shows dollar sign
         // add date 
         // Do any additional setup after loading the view.
+             */
     }
-    
+             
+
 
     /*
     // MARK: - Navigation

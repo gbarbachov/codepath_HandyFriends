@@ -593,19 +593,19 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Task title" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V83-ta-hdm">
-                                        <rect key="frame" x="140" y="8" width="91" height="23.5"/>
+                                        <rect key="frame" x="140" y="8" width="74.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="et7-GS-OAW">
-                                        <rect key="frame" x="18" y="60" width="257" height="113"/>
+                                        <rect key="frame" x="18" y="60" width="247" height="110"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="105" translatesAutoresizingMaskIntoConstraints="NO" id="RjC-Yu-NYd">
-                                                <rect key="frame" x="0.0" y="0.0" width="257" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="247" height="20"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="0h9-Ud-ekt">
-                                                        <rect key="frame" x="0.0" y="-2" width="31" height="25"/>
+                                                        <rect key="frame" x="0.0" y="-2" width="31" height="24"/>
                                                         <color key="tintColor" name="lightGreen"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="31.5" id="UDX-Hd-oxm"/>
@@ -614,7 +614,7 @@
                                                         <imageReference key="image" image="dollarsign.circle" catalog="system" symbolScale="large"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apprx. cost" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7k-Fh-Q44">
-                                                        <rect key="frame" x="136" y="0.0" width="121" height="21"/>
+                                                        <rect key="frame" x="136" y="0.0" width="111" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -622,15 +622,15 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="107" translatesAutoresizingMaskIntoConstraints="NO" id="0aR-00-PJg">
-                                                <rect key="frame" x="0.0" y="46" width="257" height="21"/>
+                                                <rect key="frame" x="0.0" y="45" width="247" height="20"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cMj-z8-dsK">
-                                                        <rect key="frame" x="0.0" y="-2.5" width="29" height="26"/>
+                                                        <rect key="frame" x="0.0" y="-2.5" width="29" height="25"/>
                                                         <color key="tintColor" name="lightGreen"/>
                                                         <imageReference key="image" image="mappin.and.ellipse" catalog="system" symbolScale="large"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmw-ks-GDg">
-                                                        <rect key="frame" x="136" y="0.0" width="121" height="21"/>
+                                                        <rect key="frame" x="136" y="0.0" width="111" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -638,10 +638,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="104" translatesAutoresizingMaskIntoConstraints="NO" id="DR3-9y-5ro">
-                                                <rect key="frame" x="0.0" y="92" width="257" height="21"/>
+                                                <rect key="frame" x="0.0" y="90" width="247" height="20"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="6Ax-Xj-Szs">
-                                                        <rect key="frame" x="0.0" y="-1" width="31.5" height="23"/>
+                                                        <rect key="frame" x="0.0" y="-1" width="31.5" height="22"/>
                                                         <color key="tintColor" name="lightGreen"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="31.5" id="M44-yg-Eim"/>
@@ -649,7 +649,7 @@
                                                         <imageReference key="image" image="calendar" catalog="system" symbolScale="large"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIb-4l-zxz">
-                                                        <rect key="frame" x="135.5" y="0.0" width="121.5" height="21"/>
+                                                        <rect key="frame" x="135.5" y="0.0" width="111.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
