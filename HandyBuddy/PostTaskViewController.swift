@@ -69,7 +69,7 @@ class PostTaskViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     
-   /*
+    /*
      @IBAction func onPistureTapGesture(_ sender: Any) {
      }
      // MARK: - Navigation
@@ -78,10 +78,7 @@ class PostTaskViewController: UIViewController, UIImagePickerControllerDelegate,
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPath(for: cell)
-        
     }
-    
-*/
+    */
+
 }
