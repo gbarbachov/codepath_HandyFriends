@@ -42,16 +42,16 @@ class TaskDetailsViewController: UIViewController {
         // if figure out autolayout, take this away
         taskLabel.sizeToFit()
         taskDescription.text = task["description"] as? String
-        contractorLabel.text = task["contractor"] as? String
+        //contractorLabel.text = task["contractor"] as? String
         // not sure about the naming here
         //contractorDescription.text = task["contractorInfo"] as? String
-        locationLabel.text = task["location"] as? String
-        moneyLabel.text = task["money"] as? String
+        //locationLabel.text = task["location"] as? String
+        //moneyLabel.text = task["money"] as? String
         // if figure out autolayout, take this away
         taskDescription.sizeToFit()
-        locationLabel.sizeToFit()
-        contractorLabel.sizeToFit()
-        contractorDescription.sizeToFit()
+        //locationLabel.sizeToFit()
+        //contractorLabel.sizeToFit()
+        //contractorDescription.sizeToFit()
         dateLabel.sizeToFit()
         moneyLabel.sizeToFit()
         locationLabel.sizeToFit()
