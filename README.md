@@ -138,3 +138,11 @@ Private information such as credit card, email and passwords can be found here
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://g.recordit.co/Jw9pYU0PHm.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='http://g.recordit.co/Q3ybv67abH.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+

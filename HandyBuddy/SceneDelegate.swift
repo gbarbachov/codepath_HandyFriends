@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         if PFUser.current() != nil {
             let main =  UIStoryboard(name: "Main", bundle: nil)
-            let feedNavigationController = main.instantiateViewController(identifier: "DiscoverViewController")
+            let feedNavigationController = main.instantiateViewController(identifier: "FeedViewController")
             guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate
             else{return}
             delegate.window?.rootViewController = feedNavigationController
